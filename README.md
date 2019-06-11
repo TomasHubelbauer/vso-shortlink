@@ -5,8 +5,5 @@
 JavaScript bookmarklet:
 
 ```js
-javascript:parts = location.href.split(/[\.\/]/g); if (parts[3] === 'visualstudio' && parts[4] === 'com' && parts[8] === 'edit') alert(`http://${parts[2]}.vso.io/${parts[9]}`)
+javascript:p=location.href.split(/[\.\/]/g);p[3]==='visualstudio'&&p[4]==='com'&&p[8]==='edit'&&navigator.clipboard.writeText(`http://${p[2]}.vso.io/${p[9]}`)&&prompt('Copied!', `http://${p[2]}.vso.io/${p[9]}`)&&false
 ```
-
-- Try to use the https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API for automatic copying
-  It should could as a secure context since the VSO instance is on HTTPS
