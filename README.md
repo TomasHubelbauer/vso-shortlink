@@ -5,5 +5,5 @@
 JavaScript bookmarklet:
 
 ```js
-javascript:p=location.href.split(/[\.\/]/g);p[3]=='visualstudio'&&p[4]=='com'&&p[8]=='edit'&&navigator.clipboard.writeText(`http://${p[2]}.vso.io/${p[9]}`)&&prompt('Copied!', `http://${p[2]}.vso.io/${p[9]}`)&&false
+javascript:[,,o,v,c,,,,e,n]=location.href.split(/[\.\/]/g);v=='visualstudio'&&c=='com'&&e=='edit'&&navigator.clipboard.writeText(`http://${o}.vso.io/${n}`)&&prompt('Copied!', `http://${o}.vso.io/${n}`)&&false
 ```
