@@ -28,7 +28,9 @@ v+c+e=='visualstudiocomedit'
 ```js
 javascript:[,,o,v,c,,,e,n]=location.href.split(/[\.\/]/g);
 v+c+e=='visualstudiocomedit'
-&&navigator.clipboard.writeText(`http://${o}.vso.io/${n}`).then(()=>location.hash='copied').catch(e=>location.hash=e.toString())
+&&navigator.clipboard.writeText(`http://${o}.vso.io/${n}`)
+  .then(()=>location.hash='Copied!')
+  .catch(e=>location.hash=e.toString())
 &&false
 ```
 
