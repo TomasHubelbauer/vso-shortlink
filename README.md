@@ -13,6 +13,11 @@ replace the URL with one of the code blocks below, depending on your preference.
 
 Do not worry about the link breaks, the browser will collapse them into spaces.
 
+## To-Do
+
+- Add support for issues open in the backlog page: `https://_.visualstudio.com/_/_sprints/backlog/_/_/_/${sprintName}`
+  - Scan the DOM for the ticket number as it is not included in the URL: `document.querySelector('a.caption').href`
+
 ## Display in `prompt`
 
 ```js
